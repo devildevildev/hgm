@@ -15,7 +15,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '27972068'))
 API_HASH = environ.get('API_HASH', '6e7e2f5cdddba536b8e603b3155223c1')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6753180750:AAGbj5ItcH1VT_FEAvZBTruibtbC4g460E0")
+BOT_TOKEN = environ.get('BOT_TOKEN', "6753180750:AAF6iKgKwnLfNnUxEYUQvA8nJHvKUuWz1j0")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -33,7 +33,7 @@ CODE = (environ.get('CODE', 'https://telegra.ph/QR-Code-for-payment-05-10'))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6075512585 5256724194').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002103062193 -1002056803358').split()] #Channel id for auto indexing ( make sure bot is admin )
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002146616379')) #Log channel id ( make sure bot is admin )
-DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002146616379')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
+DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002089352638')) #Notification of those who verify will be sent to your channel. Enter the ID of the channel you want to send notification to here.
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002146616379')) # add premium logs channel id
 auth_channel = environ.get('AUTH_CHANNEL', '-1002089352638') #Channel / Group Id for force sub ( make sure bot is admin )
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '').split()]
