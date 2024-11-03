@@ -83,7 +83,9 @@ async def Lazy_start():
     today = date.today()
     now = datetime.now(tz)
     time = now.strftime("%H:%M:%S %p")
-    await LazyPrincessBot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
+    # await LazyPrincessBot.send_message(chat_id=LOG_CHANNEL, text=script.RESTART_TXT.format(today, time))
+    chat = await LazyPrincessBot.get_chat(LOG_CHANNEL)
+    await LazyPrincessBot.send_message(chat_id=chat.id, text=script.RESTART_TXT.format(today, time))
     app = web.AppRunner(await web_server())
     await app.setup()
     bind_address = "0.0.0.0"
